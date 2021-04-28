@@ -1,0 +1,174 @@
+.sectionThree {
+  top: 0px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+}
+
+
+.titleTree {
+  position: absolute;
+  left: 75px;
+  top: -5px;
+  z-index: 1;
+  font-size: 30px;
+}
+.titleTree::after {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 15px;
+  background: var(--col-org);
+  right: 0;
+  bottom: 7px;
+  z-index: -1;
+}
+
+.cardProgram {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 90vh;
+  background: rgb(255, 255, 255);
+  margin: 0 auto;
+  margin-top: -40px;
+}
+
+.progInfo {
+  width: 90%;
+  height: 70%;
+  margin-top: 50px;
+  display: grid;
+}
+
+.progInfo .aT a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #000;
+}
+
+.progInfo .sT {
+  font-size: 18px;
+  line-height: 35px;
+  margin-top: 20px;
+}
+
+.progInfo .sB {
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.progInfo .aB a {
+  text-decoration: none;
+  font-size: large;
+  color: #000;
+  position: relative;
+
+}
+
+.progInfo .aB a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #000;
+  bottom: 0;
+  left: 0;
+}
+
+.progInfo .aB a:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  bottom: 0;
+  left: 0;
+  animation: animeAlineA 0.5s ease-in-out;
+}
+
+@keyframes animeAlineA {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.progImg {
+  width: 80%;
+  height: 90%;
+}
+
+.progImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+.cardProgram2 .progInfo{
+padding-left: 20px;
+}
+
+
+
+
+.cardProgram3 .aB{
+width: 100%;
+display: flex;
+align-items: center;
+}
+
+
+
+.cardProgram3 .aB button{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+transition: all 0.3s ease-in-out;
+
+}
+
+.cardProgram3 .aB button:hover{
+transform: translateY(-4px);
+box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.6);
+}
+
+.cardProgram3 .aB .btn1{
+    width: 150px;
+    background: var(--col-org );
+    color: #fff;
+    height: 130px;
+
+}
+
+
+
+.cardProgram3 .aB .btn2{
+    width: 200px;
+    height: 100px;
+    margin-left: 15px;
+
+    background: #fff;
+    color:  var(--col-org );
+border: 1px solid var(--col-org );
+transition: all 0.3s ease-in-out;
+}
+
+
+.cardProgram3 .aB .btn2:hover{
+    background: var(--col-org );
+    color: #fff;
+}
+
+
+
+

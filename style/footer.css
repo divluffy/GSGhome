@@ -1,0 +1,242 @@
+
+
+footer{
+    width: 100%;
+    height: 100vh;
+    background: #fff5e8;
+
+
+}
+
+.footer{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+margin: 0 auto;
+}
+
+
+
+.footLeft{
+position: relative;
+width: 400px;
+min-width: 400px;
+height: 50%;
+text-align: center;
+top: 40%;
+transform: translateY(-50%);
+/* margin-top: 10px; */
+}
+
+
+.footLeft .imgs{
+    margin-top: 20px;
+}
+
+.footLeft img{
+cursor: pointer;
+    width: 70%;
+    
+    
+    }
+    
+
+.footLeft .disbFoot{
+font-size: large;
+width: 80%;
+margin: 20px auto;
+font-size: 20px;
+
+line-height: 30px;
+text-align: left;
+}
+
+
+.disbFoot a{
+    text-decoration: none;
+    color: #000;
+}
+.disbFoot a:hover{
+    text-decoration: underline;
+}
+
+.footLeft .linkFoot{
+    margin: 30px auto; 
+width: 80%;
+display: flex;
+justify-content: space-between;
+
+}
+
+.linkFoot a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+  }
+  
+  .linkFoot a::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #000;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .linkFoot a:hover::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    bottom: 0;
+    left: 0;
+    animation: animeAlineA4 0.5s ease-in-out;
+  }
+  
+  @keyframes animeAlineA4 {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footRight{
+position: relative;
+height: 70%;
+top: 50%;
+transform: translateY(-50%);
+width: 500px;
+text-align: left;
+margin-top: 10px;
+}
+
+
+
+.titFootRight{
+    font-size: 30px;
+
+}
+.socialMedia{
+   
+    margin-top: 20px;
+}
+.socialMedia img{
+width: 40px;
+margin-right: 25px;
+cursor: pointer;
+
+}
+
+
+.form{
+width: 60%;
+margin-top: 20px ;
+}
+
+
+
+
+.form div{
+margin-top: 10px;    
+}
+    
+
+
+.form .inpt{
+    margin-top: 5px;    
+    display: grid;
+    padding: 5px;
+
+}
+
+.form .inpt label{
+
+    text-align: left;
+    padding: 5px;
+
+    
+}
+
+.form .inpt input{
+
+    text-align: left;
+    padding: 10px;
+
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+
+
+
+.checkBox{
+padding: 10px;
+}
+
+
+.checkBox .ch1{
+
+    display: flex;
+padding: 3px;
+align-items: center;
+}
+
+.checkBox .ch1 input{
+margin-right: 7px;
+cursor: pointer;
+
+}
+
+
+.checkBox .ch1 label{
+font-size: 14px;
+cursor: pointer;
+}
+
+
+
+.form .btn button{
+padding: 12px;
+margin-top: 20px;
+outline: none;
+border: none;
+border-radius: 5px;
+background-color: var(--col-org);
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+letter-spacing: 0.7px;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+}
+
+
+
+.form .btn button:hover{
+    
+
+transform: translateY(-5px);
+
+}

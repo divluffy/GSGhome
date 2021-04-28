@@ -1,0 +1,100 @@
+.sectionTow {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.cardInfo {
+  width: 270px;
+  height: 700px;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  margin: 20px;
+  animation: cardAnime 0.5s linear;
+}
+
+@keyframes cardAnime {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.cardInfo .img {
+  top: 15px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.cardInfo .img:hover {
+  transform: translatey(-15px);
+}
+
+.cardInfo .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.3);
+  transition: all 3.3s ease;
+}
+.cardInfo .img:hover img {
+  transform: scale(1.8);
+}
+
+.cardInfo .img .layT {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.692),
+    rgba(231, 229, 229, 0.3)
+  );
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  padding-bottom: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.layT span {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.layT p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.cardText {
+  margin-top: 50px;
+  line-height: 35px;
+  color: #000;
+  font-size: 16px;
+  width: 80%;
+  display: flex;
+}
+
+.cardText a {
+  font-size: 18px;
+  color: var(--col-org);
+  cursor: pointer;
+  text-decoration: none;
+}
